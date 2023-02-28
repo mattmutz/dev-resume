@@ -1,0 +1,36 @@
+{
+  "name": "dev-resume",
+  "version": "2023.2.28",
+  "description": "Node.js and Express developer resume",
+  "main": "index.js",
+  "scripts": {
+    "develop": "tsc -w & nodemon -q -w dist dist/index.js",
+    "start": "tsc & node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattmutz/dev-resume"
+  },
+  "keywords": [
+    "developer",
+    "resume"
+  ],
+  "author": "Matt Mutz",
+  "bugs": {
+    "url": "https://github.com/mattmutz/dev-resume/issues"
+  },
+  "homepage": "https://github.com/mattmutz/dev-resume#readme",
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.48.0",
+    "express": "^4.18.2",
+    "node-path": "^0.0.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^1.0.1",
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.5"
+  }
+}
